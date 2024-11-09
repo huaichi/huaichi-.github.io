@@ -1,0 +1,72 @@
+.contentBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.contentBox .box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: calc(100vh - 64px - 160px);
+}
+
+.contentBox .box > div {
+  width: 45%;
+  flex-shrink: 0;
+  height: inherit;
+}
+
+.contentBox .box .left {
+  overflow: hidden;
+  height: inherit;
+  text-align: center;
+}
+
+.contentBox .box .left img {
+  object-fit: cover;
+  object-position: center center;
+  width: auto;
+  height: 100%;
+}
+
+.contentBox .box .right {
+  position: relative;
+  height: inherit;
+}
+
+.contentBox .box .right .imgBox {
+  position: absolute;
+  left: clamp(15%, 10% + 1cqw ,100px);
+  width: inherit;
+  height: 100%;
+  background: url(../imagess/image2.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 4;
+  scale: 1.5;
+}
+
+.contentBox .box .right .textBox {
+  position: relative;
+  width: inherit;
+  height: 80%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-size: clamp(4cqw,1.7rem + .5vh,4cqh);
+  font-family: 'Berlin Sans FB Demi','STLITI', sans-serif;
+  font-weight: lighter;
+  z-index: 2;
+}
+
+.contentBox .box .right .textBox p {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}

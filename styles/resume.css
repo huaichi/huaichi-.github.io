@@ -1,0 +1,82 @@
+.contentBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.contentBox .box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  height: calc(100vh - 64px - 160px);
+}
+
+.contentBox .box > div {
+  width: 45%;
+  flex-shrink: 0;
+  height: inherit;
+}
+
+.contentBox .box .left {
+  overflow: hidden;
+  height: inherit;
+  text-align: center;
+}
+
+.contentBox .box .left img {
+  object-fit: cover;
+  object-position: center center;
+  width: auto;
+  height: 100%;
+}
+
+.contentBox .box .right {
+  position: relative;
+  height: inherit;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentBox .box .right .imgBox {
+  position: absolute;
+  left: clamp(15%, 10% + 1cqw ,100px);
+  width: inherit;
+  height: 100%;
+  background: url(../imagess/image3.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 4;
+  scale: 3;
+}
+
+.contentBox .box .right p#about {
+  font-size: clamp(4cqw,.5vh + 1cqw,5cqw);
+  font-family: 'FZYTK' sans-serif;
+}
+
+.contentBox .box .right div.info {
+  font-size: 20px;
+  font-family: 'FZYTK';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3cqh;
+  margin-top: 5cqh;
+}
+
+.contentBox .box .right div.info p,
+.contentBox .box .right div.info span {
+  font-family: '方正姚体';
+}
+
+.contentBox .box .right .textBox {
+  position: relative;
+  height: 80%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 2;
+}

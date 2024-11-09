@@ -1,0 +1,133 @@
+.contentBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.contentBox .box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: calc(100vh - 64px - 160px);
+}
+
+.contentBox .box > div {
+  width: 40%;
+  flex-shrink: 0;
+  height: inherit;
+}
+
+.contentBox .box .left {
+  overflow: hidden;
+  height: inherit;
+  text-align: center;
+}
+
+.contentBox .box .left img {
+  object-fit: cover;
+  object-position: center center;
+  width: auto;
+  height: 100%;
+}
+
+.contentBox .box .right {
+  position: relative;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contentBox .box .right .title {
+  font-size: clamp(4cqw,1.7rem + .5vh,4cqh);
+  font-family: 'Roboto Mono', 'Calibri', 'Arai', sans-serif;
+  white-space: nowrap;
+}
+
+.contentBox .box .right .info p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-family: '方正姚体';
+  font-size: 22px;
+}
+
+.contentBox .box .right .form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contentBox .box .right .form > div div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: middle;
+  padding: 2px 4px;
+  border: 2px solid;
+  border-radius: 3px;
+  border-image: radial-gradient(yellow 70%, green 130%) 10;
+  clip: border;
+  height: 30px;
+}
+
+.contentBox .box .right .form > div div > input {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.contentBox .box .right .liu {
+  width: inherit;
+  height: 100px;
+  border: 1px solid;
+  border-image: radial-gradient(yellow 70%, green 130%) 10;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.contentBox .box .right .liu textarea#liu {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+  padding: 5px 3px;
+  border-image: radial-gradient(yellow 70%, green 130%) 10;
+}
+
+.contentBox .box .right .submit {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+  height: auto;
+  padding-top: 20px;
+}
+
+.contentBox .box .right a.send {
+  display: block;
+  padding: 8px 70px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  color: #000;
+  font-family: 'Berlin Sans FB Demi', 'STLITI', sans-serif;
+  background: linear-gradient(to right, rgb(255, 221, 0), rgb(129, 213, 129), rgb(255, 221, 0));
+}
+
+.contentBox .box .right .imgBox {
+  position: absolute;
+  right: -100px;
+  top: -60px;
+  width: inherit;
+  height: 70%;
+  background: url(../imagess/image8.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 4;
+}
+
